@@ -8,12 +8,13 @@ layout: default
     <h2>
       <a class="title" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
     </h2>
-    <p class="published muted">{{ post.date | date_to_string }}</p>
+    <p class="published text-muted">{{ post.date | date_to_string }}</p>
+    <p class="author text-muted">{{ post.date | date_to_string }}</p>
     <div class="content">
       {{ post.content | truncatehtml: 500 }}
       <a href="{{ post.url }}" class="btn pull-right">Read More</a>
     </div>
-    <p class="muted">
+    <p class="text-muted">
       Tags&nbsp;
       {% for tag in post.tags %}
       <a href="/tag/{{ tag }}" title="{{ tag }}" rel="tag" class="btn btn-mini">{{ tag }}</a>

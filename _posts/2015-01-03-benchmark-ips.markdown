@@ -1,6 +1,7 @@
 ---
 layout: post
 title: benchmark-ips
+author: Richard Huang
 tags:
 - gem
 ---

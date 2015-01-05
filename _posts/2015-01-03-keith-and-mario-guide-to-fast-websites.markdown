@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Keith and Mario's Guide to Fast Websites"
+author: Richard Huang
 tags:
 - talk
 ---
