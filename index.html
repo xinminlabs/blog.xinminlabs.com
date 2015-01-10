@@ -7,8 +7,8 @@ title: Xinmin Labs Blog
     <h2>
       <a class="title" href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
     </h2>
-    <p class="author text-muted">{{ post.author }}</p>
     <p class="published text-muted">{{ post.date | date_to_string }}</p>
+    <p class="author text-muted">{{ post.author }}</p>
     <div class="content">
       {{ post.content | truncatehtml: 500 }}
       <a href="{{ post.url }}" class="btn pull-right">Read More</a>
