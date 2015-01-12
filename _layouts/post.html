@@ -3,7 +3,6 @@ layout: default
 ---
 <div class="post">
   <h1><a class="title" href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a></h1>
-  <div class="addthis_sharing_toolbox"></div>
   <p class="published text-muted">{{ page.date | date_to_string }}</p>
   <p class="author text-muted">{{ page.author }}</p>
   <div class="content">{{ content }}</div>
@@ -13,7 +12,6 @@ layout: default
     <a href="/tag/{{ tag }}" title="{{ tag }}" rel="tag" class="btn btn-mini">{{ tag }}</a>
     {% endfor %}
   </p>
-  <div class="addthis_sharing_toolbox"></div>
 </div>
 <hr/>
 
