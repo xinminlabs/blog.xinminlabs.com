@@ -1,0 +1,23 @@
+---
+layout: post
+title: octodown
+tags:
+- gem
+---
+
+[octodown][1] allows you to preview what markdown would look like
+exactly on github from your shell.
+
+If you are a developer who uses github, you have many chances to write
+markdown files, but you can't see what the mardown would look like until
+you push it to github, but sometimes when you want to write some formats
+you aren't familiar with, like table, you may need to push several tiems
+to make it work.
+
+By using octodown gem, you can preview and change markdown formats
+locally, dead simple.
+
+![Demo](https://github.com/ianks/octodown/blob/master/assets/octodown.gif?raw=true)
+
+
+[1]: https://github.com/ianks/octodown
