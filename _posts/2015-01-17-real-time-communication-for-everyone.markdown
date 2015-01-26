@@ -5,7 +5,7 @@ tags:
 - talk
 ---
 
-### 视频
+### Video
 
 <iframe src="//player.vimeo.com/video/102226639" width="500"
 height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
@@ -14,13 +14,13 @@ allowfullscreen></iframe> <p><a href="http://vimeo.com/102226639">GORUCO
 <a href="http://vimeo.com/goruco">Gotham Ruby Conference</a> on <a
 href="https://vimeo.com">Vimeo</a>.</p>
 
-### 幻灯片
+### Slides
 
 <script async class="speakerdeck-embed"
 data-id="8af60170db8f0131a69c42d341a7ea58" data-ratio="1.33333333333333"
 src="//speakerdeck.com/assets/embed.js"></script>
 
-### 介绍
+### Introduction
 
 It was a talk from Lisa Larson-Kelley at Goruco 2014, introducing how to
 use WebRTC to implement real time communication on browser.

@@ -6,13 +6,13 @@ tags:
 - talk
 ---
 
-### 视频
+### Video
 
 <iframe width="560" height="315"
 src="//www.youtube.com/embed/mVN7aTqr550" frameborder="0"
 allowfullscreen></iframe>
 
-### 介绍
+### Introduction
 
 It was a talk from Bryan Helmkamp at RedDotRubyConf 2014, introducing
 Docker with ruby apps, he introduced
