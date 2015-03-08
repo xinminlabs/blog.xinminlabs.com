@@ -13,7 +13,7 @@ allowfullscreen></iframe>
 
 ### Introduction
 
-It was a talk  from Kiyoto Tamura at Golden Gate Ruby Conference 2014,
+It was a talk from Kiyoto Tamura at Golden Gate Ruby Conference 2014,
 sharing his experience to do data analysis by fluentd.
 
 He mentioned the problems he faced when doing data collection and logs

@@ -1,0 +1,46 @@
+---
+layout: post
+title: backup
+tags:
+- gem
+---
+
+[backup][1] provides an elegant DSL in Ruby for backups.
+
+Backup can
+
+Archives and databases (Mysql, MongoDB, Redis, etc.)
+Compressors and encryptors
+Storages (Amazon S3, Dropbox, FTP, etc.)
+Notifiers (Email, Twitter, Slack, etc.）
+
+The following is an example, backup builds directory and mysql database,
+compress backup file as gzip and save to Dropbox.
+
+```
+Backup::Model.new(:name, 'description') do
+  archive :builds do |archive|
+    archive.root 'root'
+    archive.add 'builds/'
+  end
+
+  database MySQL do |db|
+    db.name               = "name"
+    db.username           = "username"
+    db.password           = "password"
+    db.host               = "host"
+    db.port               = 3306
+  end
+
+  store_with Dropbox do |db|
+    db.api_key    = 'api key'
+    db.api_secret = 'api secret'
+    db.access_type = 'dropbox'
+    db.keep       = 10
+  end
+
+  compress_with Gzip
+end
+```
+
+[1]: https://github.com/meskyanichi/backup
