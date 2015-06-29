@@ -197,7 +197,7 @@ First you need to define what aggregate sql function you want to eager
 load.
 
 ```ruby
-class Post
+class Post < ActiveRecord::Base
   has_many :comments
 
   # eager load average rating of comments
@@ -206,7 +206,7 @@ class Post
   define_eager_group :approved_comments_count, :comments, :count, :*, -> { approved }
 end
 
-class Comment
+class Comment < ActiveRecord::Base
   belongs_to :post
 
   scope :approved, -> { where(status: 'approved') }
