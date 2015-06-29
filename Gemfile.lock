@@ -108,3 +108,6 @@ DEPENDENCIES
   liquid
   nokogiri
   rdiscount
+
+BUNDLED WITH
+   1.10.3
