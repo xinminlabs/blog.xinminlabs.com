@@ -137,7 +137,7 @@ end
 
 posts = Post.limit(10)
 posts.each do |post|
-  posts.comments.approved.count
+  post.comments.approved.count
 end
 ```
 
@@ -170,7 +170,7 @@ posts = Post.limit(10)
 approved_comments_count_hash = Comment.where(post_id: posts.map(&:id)).approved.group(:post_id).count
 posts.each { |post| post.approved_comments_count = approved_comments_count_hash[post.id] }
 posts.each do |post|
-  posts.comments.approved_comments_count
+  post.comments.approved_comments_count
 end
 ```
 
